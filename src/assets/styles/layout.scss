@@ -1,0 +1,59 @@
+.layoutwrapper {
+    padding: 2em 4em;
+    overflow: hidden;
+    width: 100vw;
+    background-color: transparent;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 17px rgba(59, 59, 59, 0.054);
+    margin-bottom: 7em;
+  }
+
+  footer{
+    .layoutwrapper{
+      margin-bottom: 0;
+    }
+  }
+
+  .logoCol{
+    .navLogo{
+      width: 20%;
+    }
+    h5{
+      padding-top: 0.5em;
+      color: #114f97;
+    }
+  }
+ 
+  .linkCol{
+    align-self: center;
+    .col{
+      flex-basis: 18%;
+      flex-grow: 1;
+    }
+    .linkRow{
+      justify-content: space-around;
+      align-content: center;
+      align-items: center;
+    }
+  
+    .navlinks{
+      word-wrap: break-word;
+      text-decoration: none;
+      color: #000000;
+      font-weight: 300;
+      transition: all 600ms ease-in-out;
+      z-index: 500;
+     
+      &:hover{
+      font-weight: 500;
+      }
+    }
+  }
+
+/*************FOOTER**********************//*************FOOTER**********************/
+/*************FOOTER**********************//*************FOOTER**********************/
+
+

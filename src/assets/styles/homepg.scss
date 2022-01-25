@@ -1,0 +1,274 @@
+@import 'breakpoint'; 
+
+$mainBlue : #1971D4;
+
+/**sudo global style only for home page*/
+.sectionWrapper{
+    margin: 2em 4em 8em;
+}
+
+.cardContent{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 255px;
+    height: 200px;
+    text-align: center;
+    padding: 2em 1em;
+    background: #E9EAEB;
+    box-shadow: -3px 14px 34px 8px rgba(0, 0, 0, 0.06);
+    border-radius: 34px;
+    overflow: hidden;
+}
+/**sudo global style only for home page ENDS*/
+
+.introWrapper{
+    margin: 0 4em;
+}
+.introText{
+    justify-content: space-between;
+    align-items: flex-end;
+    align-content: flex-end;
+    margin-bottom: 1em;
+    flex-wrap: wrap;
+
+    .textHeader{
+        text-align: left;
+        flex-grow: 2;
+
+        h1{
+            font-size: 4em;
+            color: $mainBlue;
+            margin: 0;
+        }
+    }
+    .textSubheader{
+        text-align: right;
+        width: 30%;
+        h2{
+            font-size: 2em;
+            font-weight: 400;
+            margin: 0;   
+        }
+    }
+}
+.carHero{
+    position: relative;
+    z-index: 3;
+    margin: 8em auto 2em;
+    text-align: center;
+
+    img{
+        position: relative;
+        width: 105%;
+        position: relative;
+        z-index: 3;
+
+    }
+    .bgText{
+        position: absolute;
+        z-index: 1;
+        top: -6em;
+        left: -2em;
+        
+        p{
+            text-transform: uppercase;
+            color: white;
+            font-weight: 300;
+            font-size: 16.5em;
+        }
+    }
+}
+
+.APRWrapper{
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+    .Zeropercent{
+        font-size: 3em;
+    }
+    .buttonApr{
+        margin-top: 1em;
+    }
+}
+
+.cardsSectionHome{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+
+    .cardContent{
+        p{
+            font-size: 1em;
+        }
+        h3:not(.smallerText){
+            font-weight: 700;
+            font-size: 1.4em;
+        }
+        .smallerText{
+            font-weight: 700;
+            font-size: 2em;
+        }
+    }
+}
+.testDrive{
+    margin: 5em 0;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
+    .testDriveTxt{
+        h3{
+            color: $mainBlue;
+            font-size: 3.3em;
+            font-weight: 600;
+            padding-bottom: 0.1em;
+        }
+        p{
+            font-size: 1.3em;
+            line-height: 135%;
+        }
+    }
+    .dhomeCar{
+        .carimg{
+            position: relative;
+            top: 10em;
+            left: -10em;
+            width: 180%;
+        }
+    }
+}
+
+.quoteHome{
+    padding-top: 6em;
+    h3{
+        font-size: 2.3em; 
+        width: 70%; 
+        line-height: 140%; 
+        padding-bottom: 0.8em;
+    }
+    p{
+        font-size: 1.6em; 
+        padding-top: 0.7em; 
+        width: 30%; 
+        border-top: 2px solid black;
+    }
+}
+
+.quoteCardsHome{
+    padding: 3.5em auto;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+   
+    .cardContent{
+        width: 355px;
+        margin: 10px 30px 10px;
+    }
+}
+
+.findDealerHome{
+    padding: 4em 0 8em 5em;
+    overflow: hidden;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: center;
+
+    .dealerMap{
+        h3{
+            color: $mainBlue;
+            font-size: 3.7em;
+            font-weight: 600;
+            padding-bottom: 0.3em;
+        }
+        p{
+            font-size: 1.6em;
+            margin-bottom: 2em;
+        }
+        .zipCodebox{
+            background: none;
+            border: none;
+            border-radius: 0;
+            border-bottom: 1px solid black;
+            width: 80%;
+    
+            form.zipCodebox:focus{
+                background: white;
+            }
+        }
+    }
+    .dealerLogo{
+        img{
+            width: 100%;
+        }
+    }
+}
+
+
+@include media ("screen", "<=phone") {
+    .btnOutline, .btnPrimary{
+        width: 100%;
+        height: 50px;
+        margin-top: 1em;
+      }
+
+    .homeWrapper{padding-top: 7em;}
+    .sectionWrapper{margin: 2em 3em 8em;}
+    .introText{ 
+    .textHeader{ 
+        h1{ font-size: 36px;}
+        }
+        .textSubheader{
+            text-align: left;
+            width: 100%;
+            h2{
+                font-size: 20px;
+                margin-top: 10px;
+            }
+        }
+    } 
+    .carHero{.bgText{p{font-size: 100px;}}}
+    .APRWrapper{
+        margin-top: 1.3em;
+        .Zeropercent{
+            font-size: 40px;
+        }
+        h2{font-size: 30px;}
+        h4{
+         font-size: 18px;
+        }
+    }
+
+    .cardsSectionHome .cardContent, 
+    .quoteCardsHome .cardContent{
+            width: 85%;
+            height: 170px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            p{font-size: 18px;}
+            h3:not(.smallerText){font-size: 22px;}
+            .smallerText{font-size: 30px;}
+        }
+    
+    .testDrive .testDriveTxt{
+        h3{font-size: 25px;}
+        p{font-size: 16px;}
+    }
+    .testDrive .dhomeCar{img{padding-left: 9.5em;}}
+    .quoteHome{
+        padding: inherit 25px;
+
+        h3{
+            font-size: 20px; 
+            width: 90%; 
+        }
+        p{
+            font-size: 15px; 
+            width: 50%; 
+        }
+    }
+
+}

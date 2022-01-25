@@ -1,0 +1,59 @@
+@import 'breakpoint'; 
+$mainBlue : #1971D4;
+
+.allcarHeader{
+    justify-content: center;
+    align-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 6em;
+    h3{
+        font-size: 4em;
+        font-weight: 600;
+        color: $mainBlue;
+        margin: 0;
+    }
+    p{
+        font-size: 1.5em;
+        width: 54%;
+        margin-top: 0.8em;
+    }
+    .allCarsBanner{
+        img{
+            width: 350%;
+            position: relative;
+            left: -17em;
+            top: 3em;
+        }
+    }
+}
+.carSedan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 1em 4em;
+    margin: 3em 1em;
+    .carCardAll{
+        display: flex;
+        flex-direction: column;
+        padding: 5em 2em;
+        background: #E9EAEB;
+        box-shadow: -3px 14px 34px 8px rgba(0, 0, 0, 0.06);
+        border-radius: 34px;
+        overflow: hidden;
+    }
+    .carcardInner{
+        justify-content: center;
+        align-items: flex-start;
+        align-content: flex-start;
+
+        .sedanText{
+            h3{font-size: 3em; font-weight: 600;}
+            h4{font-size: 2em;}
+        }
+        img{
+            width: 100%;
+            margin-left: 1.4em;
+        }
+    } 
+}
